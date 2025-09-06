@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Solutions Gallery - Innovation Portfolio | NexiaI</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore our comprehensive gallery of AI solutions, machine learning projects, and cutting-edge technology implementations. View real-world applications and success stories.">
+    <meta name="keywords" content="AI gallery, machine learning portfolio, computer vision projects, NLP solutions, data science showcase, artificial intelligence applications">
+    <meta name="author" content="NexiaI">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nexiai.com/gallery">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AI Solutions Gallery - Innovation Portfolio | NexiaI">
+    <meta property="og:description" content="Explore our comprehensive gallery of AI solutions, machine learning projects, and cutting-edge technology implementations.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=630&q=80">
+    <meta property="og:url" content="https://nexiai.com/gallery">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NexiaI">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nexiai">
+    <meta name="twitter:title" content="AI Solutions Gallery - Innovation Portfolio">
+    <meta name="twitter:description" content="Explore our comprehensive gallery of AI solutions, machine learning projects, and cutting-edge technology implementations.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=630&q=80">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": "NexiaI AI Solutions Gallery",
+        "description": "Comprehensive gallery showcasing AI solutions, machine learning projects, and technology implementations",
+        "url": "https://nexiai.com/gallery",
+        "publisher": {
+            "@type": "Organization",
+            "name": "NexiaI",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://nexiai.com/logo.png"
+            }
+        },
+        "image": [
+            "https://images.unsplash.com/photo-1555255707-c07966088b7b",
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+            "https://images.unsplash.com/photo-1518709268805-4e9042af2176"
+        ]
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --text-light: #9ca3af;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-dark: #0f172a;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --gradient-primary: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            --gradient-secondary: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --transition: all 0.3s ease;
+            --border-radius: 12px;
+            --max-width: 1200px;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+        
+        .header.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+        
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            height: 80px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            margin-right: 0.5rem;
+            border-radius: 8px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-link {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary-color);
+            background-color: rgba(37, 99, 235, 0.1);
+        }
+        
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        .nav-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--text-primary);
+            margin: 3px 0;
+            transition: var(--transition);
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.9) 100%), url('https://images.unsplash.com/photo-1677442135135-416f8aa26a5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .filter-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            padding: 6rem 0;
+            background: var(--bg-primary);
+        }
+        
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .gallery-item {
+            background: var(--bg-primary);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+        
+        .gallery-item.hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .gallery-media {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+        
+        .video-thumbnail {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .play-button i {
+            color: var(--primary-color);
+            font-size: 20px;
+            margin-left: 4px;
+        }
+        
+        .video-thumbnail:hover .play-button {
+            background: white;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        
+        .video-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .video-container.active {
+            display: flex;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            width: 80%;
+            max-width: 900px;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+        
+        .close-video {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .close-video:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        
+        .gallery-content {
+            padding: 2rem;
+        }
+        
+        .gallery-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .gallery-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .gallery-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        
+        .tag {
+            padding: 0.5rem 1rem;
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        .gallery-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        .view-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .view-link:hover {
+            color: var(--secondary-color);
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            padding: 4rem 0;
+            background: var(--bg-dark);
+            color: white;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 0;
+            background: var(--bg-secondary);
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .cta-section p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--bg-dark);
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+        
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            line-height: 1.6;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        .social-link i {
+            font-size: 18px;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 2rem;
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: flex;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: white;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: var(--transition);
+                box-shadow: var(--shadow-lg);
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .filter-tabs {
+                gap: 0.5rem;
+            }
+            
+            .filter-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .video-wrapper {
+                width: 95%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="home.html" class="logo">
+                <img src="/images/contact-og-image.jpg" alt="NexiAi Logo" class="logo-icon" />
+                <span>NexiAi</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="work.html" class="nav-link">Projects</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Innovation Gallery</h1>
+            <p>Explore our comprehensive portfolio of AI solutions, cutting-edge implementations, and transformative technology projects that drive business success.</p>
+            
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
+                <button class="filter-btn" data-filter="nlp">Natural Language Processing</button>
+                <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Machine Learning Projects -->
+                <div class="gallery-item fade-in" data-category="machine-learning">
+                    <div class="gallery-media">
+                        <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Predictive Analytics Dashboard" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Predictive Analytics Platform</h3>
+                        <p class="gallery-description">Advanced machine learning platform that analyzes market trends and predicts customer behavior with 95% accuracy for Fortune 500 companies.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">BigQuery</span>
+                        </div>
+                        <div class="gallery-meta">
+                            <span>Enterprise Solution</span>
+                            <a href="#" class="view-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="machine-learning">
+                    <div class="gallery-media">
+                        <div class="video-thumbnail" data-video="https://www.youtube.com/embed/6c6l4tA4pZY">
+                            <img src="https://img.youtube.com/vi/6c6l4tA4pZY/maxresdefault.jpg" alt="Financial Risk Assessment Video">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Financial Risk Assessment AI</h3>
+                        <p class="gallery-description">Intelligent risk assessment system that evaluates loan applications and investment portfolios, reducing manual review time by 80%.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="gallery-meta">
+                            <span>FinTech Solution</span>
+                            <a href="#" class="view-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computer Vision Projects -->
+                <div class="gallery-item fade-in" data-category="computer-vision">
+                    <div class="gallery-media">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Quality Control AI" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Manufacturing Quality Control</h3>
+                        <p class="gallery-description">Computer vision system that detects product defects on manufacturing lines with 99.7% accuracy, improving quality control processes.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">YOLO</span>
+                            <span class="tag">Edge Computing</span>
+                        </div>
+                        <div class="gallery-meta">
+                            <span>Manufacturing</span>
+                            <a href="#" class="view-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="computer-vision">
+                    <div class="gallery-media">
+                        <div class="video-thumbnail" data-video="https://www.youtube.com/embed/6c6l4tA4pZY">
+                            <img src="https://img.youtube.com/vi/6c6l4tA4pZY/maxresdefault.jpg" alt="Medical Imaging AI Video">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Medical Imaging Diagnostics</h3>
+                        <p class="gallery-description">AI-powered diagnostic tool that analyzes medical images to detect early-stage diseases, assisting healthcare professionals in accurate diagnosis.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">DICOM</span>
+                            <span class="tag">CNN</span>
+                            <span class="tag">HIPAA Compliant</span>
+                        </div>
+                        <div class="gallery-meta">
+                            <span>Healthcare</span>
+                            <a href="#" class="view-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NLP Projects -->
+                <div class="gallery-item fade-in" data-category="nlp">
+                    <div class="gallery-media">
+                        <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Customer Service AI" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Intelligent Customer Support</h3>
+                        <p class="gallery-description">Advanced NLP chatbot that handles customer inquiries with human-like understanding, resolving 85% of support tickets automatically.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">BERT</span>
+                            <span class="tag">GPT</span>
+                            <span class="tag">DialogFlow</span>
+                            <span class="tag">Multi-language</span>
+                        </div>
+                        <div class="gallery-meta">
+                            <span>Customer Service</span>
+                            <a href="#" class="view-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="nlp">
+                    <div class="gallery-media">
+                        <div class="video-thumbnail" data-video="https://www.youtube.com/embed/6c6l4tA4pZY">
+                            <img src="https://img.youtube.com/vi/6c6l4tA4pZY/maxresdefault.jpg" alt="Sentiment Analysis Video">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Real-time Sentiment Analysis</h3>
+                        <p class="gallery-description">Social media monitoring system that analyzes brand sentiment across platforms, providing real-time insights for marketing teams.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">NLTK</span>
+                            <span class="tag">spaCy</span>
+                            <span class="tag">Apache Kafka</span>
+                            <span class="tag">Elasticsearch</span>
+                        </div>
+                        <div class="gallery-meta">
+                            <span>Marketing Intelligence</span>
+                            <a href="#" class="view-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analytics Projects -->
+                <div class="gallery-item fade-in" data-category="data-analytics">
+                    <div class="gallery-media">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwa90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Business Intelligence Dashboard" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Executive BI Dashboard</h3>
+                        <p class="gallery-description">Comprehensive business intelligence platform that aggregates data from multiple sources, providing executives with actionable insights.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">Tableau</span>
+                            <span class="tag">Power BI</span>
+                            <span class="tag">SQL Server</span>
+                            <span class="tag">ETL Pipeline</span>
+                        </div>
+                        <div class="gallery-meta">
+                            <span>Business Intelligence</span>
+                            <a href="#" class="view-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="data-analytics">
+                    <div class="gallery-media">
+                        <div class="video-thumbnail" data-video="https://www.youtube.com/embed/6c6l4tA4pZY">
+                            <img src="https://img.youtube.com/vi/6c6l4tA4pZY/maxresdefault.jpg" alt="Supply Chain Analytics Video">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Supply Chain Optimization</h3>
+                        <p class="gallery-description">Advanced analytics platform that optimizes supply chain operations, reducing costs by 25% and improving delivery times.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">Apache Spark</span>
+                            <span class="tag">Hadoop</span>
+                            <span class="tag">R</span>
+                            <span class="tag">Optimization</span>
+                        </div>
+                        <div class="gallery-meta">
+                            <span>Logistics</span>
+                            <a href="#" class="view-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automation Projects -->
+                <div class="gallery-item fade-in" data-category="automation">
+                    <div class="gallery-media">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Robotic Process Automation" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Document Processing Automation</h3>
+                        <p class="gallery-description">RPA solution that automates invoice processing and data extraction, reducing manual work by 90% and eliminating errors.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">UiPath</span>
+                            <span class="tag">OCR</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">API Integration</span>
+                        </div>
+                        <div class="gallery-meta">
+                            <span>Process Automation</span>
+                            <a href="#" class="view-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in" data-category="automation">
+                    <div class="gallery-media">
+                        <div class="video-thumbnail" data-video="https://www.youtube.com/embed/6c6l4tA4pZY">
+                            <img src="https://img.youtube.com/vi/6c6l4tA4pZY/maxresdefault.jpg" alt="Smart Building Automation Video">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-title">Smart Building Management</h3>
+                        <p class="gallery-description">IoT-powered building automation system that optimizes energy consumption and maintains optimal environmental conditions.</p>
+                        <div class="gallery-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Azure IoT</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Energy Optimization</span>
+                        </div>
+                        <div class="gallery-meta">
+                            <span>Smart Buildings</span>
+                            <a href="#" class="view-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-container" id="videoModal">
+        <div class="close-video" id="closeVideo">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="video-wrapper">
+            <iframe id="youtubePlayer" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item fade-in">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+                <div class="stat-item fade-in">
+                    <span class="stat-number">40%</span>
+                    <span class="stat-label">Average Cost Reduction</span>
+                </div>
+                <div class="stat-item fade-in">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">System Uptime</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Let's discuss how our AI solutions can drive innovation and growth for your organization.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                <a href="work.html" class="btn btn-secondary">View Case Studies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NexiaI</h3>
+                    <p>Leading AI solutions company transforming businesses through cutting-edge artificial intelligence and machine learning technologies.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/nexiai" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/nexiai" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/nexiai" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com/nexiai" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="work.html#ai-development">AI Development</a></li>
+                        <li><a href="work.html#data-analytics">Data Analytics</a></li>
+                        <li><a href="work.html#computer-vision">Computer Vision</a></li>
+                        <li><a href="work.html#nlp">Natural Language Processing</a></li>
+                        <li><a href="work.html#predictive-analytics">Predictive Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#team">Our Team</a></li>
+                        <li><a href="work.html">Case Studies</a></li>
+                        <li><a href="contact.html">Careers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><strong>Address:</strong><br>123 AI Boulevard<br>Tech City, TC 10101</p>
+                    <p><strong>Phone:</strong><br>+1 (555) 123-4567</p>
+                    <p><strong>Email:</strong><br>info@nexiai.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NexiaI. All rights reserved. | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        const header = document.getElementById('header');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Gallery filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                // Filter items
+                const filterValue = button.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Video modal functionality
+        const videoModal = document.getElementById('videoModal');
+        const youtubePlayer = document.getElementById('youtubePlayer');
+        const closeVideo = document.getElementById('closeVideo');
+        const videoThumbnails = document.querySelectorAll('.video-thumbnail');
+
+        videoThumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                const videoUrl = thumbnail.getAttribute('data-video');
+                youtubePlayer.src = videoUrl;
+                videoModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeVideo.addEventListener('click', () => {
+            videoModal.classList.remove('active');
+            youtubePlayer.src = '';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal when clicking outside
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                videoModal.classList.remove('active');
+                youtubePlayer.src = '';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Fade in animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
